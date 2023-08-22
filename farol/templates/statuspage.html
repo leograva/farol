@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+    {% block content %}
+
+    <div class="tabela">
+        <table class="table">
+        <thead>
+            <tr><th scope="col">Aplicação</th>
+                <th scope="col">Status</th>
+                <th scope="col">---</th></tr>
+        </thead>
+    {% for aplicacao in aplicacoes %}
+    {%if aplicacao.status == 'Em funcionamento'%}
+        <tr>
+            <td class="table-success">{{ aplicacao.nome }}</td>
+            <td class="table-success">{{ aplicacao.status }}</td>
+            <td class="table-success"><div class="status-ball" style="background-color:green"></div></td>
+        </tr>
+    {% else %}
+              <tr>
+                  <td class="table-danger">{{ aplicacao.nome }}</td>
+                  <td class="table-danger">{{ aplicacao.status }}</td>
+                  <td class="table-danger"><div class="status-ball" style="background-color:red"></div></td>
+              </tr>
+          {%endif%}
+          {% endfor %}
+    {% endblock %}

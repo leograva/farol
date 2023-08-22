@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Page - Command Center</title>
+    <link link rel="stylesheet" type="text/css" href="{% static 'base.css' %}"/> 
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body style="background-color: #ec7bbc;">
+
+  <nav class="navbar navbar-light" style="background-color:  #f41094;">
+      <a class="navbar-brand" style="color:white;"> &nbsp; Status - Command Center</a>
+  </nav>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

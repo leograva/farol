@@ -1,0 +1,20 @@
+.tabela{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    align-content: center;
+}
+
+.tabela table {
+    max-width: 90%;
+    background-color:#F2F2F2;
+    padding: 36px 64px;
+    box-shadow: 8px 8px 16px #939393de;
+}
+
+.status-ball{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color:#ef61ba
+    }
