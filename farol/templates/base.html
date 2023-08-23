@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Status Page - Command Center</title>
     <link link rel="stylesheet" type="text/css" href="{% static 'base.css' %}"/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    setTimeout(function(){
+       location.reload(true);
+    }, 60000);  
+});
+</script>
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}

@@ -1,0 +1,20 @@
+Status page:
+
+- Layout CSS - OK
+- Study the possibility to reload the page automatically - OK
+- Switch color on hover the table line - OK
+- Create or using Livelo logo and put at the navbar - Pending
+- Add favicon to project - Pending
+- Add filter to status page to possibility show only one status - Pending
+
+Admin page:
+- Separation of fields that are displayed on aplications screen - OK
+- Adding filter to aplications screen to allow show only an status per query - OK
+
+Project:
+
+- Deploy application to AWS - Check if EC2 is a best option - Pending
+
+Relevant content:
+
+- Grappelli - https://django-grappelli.readthedocs.io/en/latest/

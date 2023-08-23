@@ -3,4 +3,8 @@ from .models import Aplicação
 
 # Register your models here.
 admin.site.site_header = 'Status Page - Command Center'
-admin.site.register(Aplicação)
+
+@admin.register(Aplicação)
+class AplicaçãoAdmin(admin.ModelAdmin):
+    list_display = ('nome','status')
+    list_filter = ('status',)
